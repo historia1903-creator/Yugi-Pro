@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <!-- ADIN_PLAY_SCRIPT_PLACEHOLDER -->
   %VITE_TURNSTILE_SCRIPT%
     <script>
@@ -8,7 +9,7 @@
     </script>
     <!-- Meta Properties -->
     <meta charset='UTF-8'>
-    <title>resurviv.biz - 2d battle royale game</title>
+    <title>Yugi Pro</title>
     <meta name="viewport"
       content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no">
     <meta name="description"
@@ -67,6 +68,7 @@
         });
       }
     </script>
+<style>html,body{width:100%;height:100%;margin:0;padding:0;overflow:hidden;background:#000}body{min-height:100dvh;min-width:100vw}canvas{display:block;max-width:none;max-height:none}</style>
   </head>
   <body>
     <!-- Side Rail Ads (skyscrapers) -->
@@ -3264,5 +3266,6 @@
       }
     </script>
     <script type="module" src="src/main.ts"></script>
+<script>document.addEventListener("pointerdown",()=>{const e=document.documentElement;const f=e.requestFullscreen||e.webkitRequestFullscreen;if(f&&!document.fullscreenElement){f.call(e).catch(()=>{});}}, {once:true});</script>
   </body>
 </html>
