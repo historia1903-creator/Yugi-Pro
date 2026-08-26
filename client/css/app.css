@@ -302,7 +302,7 @@ a:active {
   background-image: url(/img/yugi_pro_logo.png);
   background-repeat: no-repeat;
   /* In case of logo change, update this value to width divided by 2 ceiled  */
-  background-size: 396px;
+  background-size: 269px;
   background-position: center;
   height: 140px;
   margin: auto;
