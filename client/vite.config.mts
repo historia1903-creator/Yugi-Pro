@@ -4,7 +4,7 @@ import stripBlockPlugin from "vite-plugin-strip-block";
 import { getConfig } from "../config";
 import { version } from "../package.json";
 import { GIT_VERSION } from "../server/src/utils/gitRevision";
-import { atlasBuilderPlugin } from "./atlas-builder/vitePlugin";
+ import { atlasBuilderPlugin } from "./atlas-builder/vitePlugin";
 import { codefendPlugin } from "./vite-plugins/codefendPlugin";
 import { ejsPlugin } from "./vite-plugins/ejsPlugin";
 

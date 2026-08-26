@@ -23,9 +23,11 @@
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "@biomejs/biome": "2.4.7",
+    "@img/sharp-wasm32": "^0.35.3",
     "@types/hjson": "^2.4.6",
     "@types/node": "^25.5.0",
     "concurrently": "^9.2.1",
+    "sharp": "^0.35.3",
     "typescript": "^5.9.3"
   },
   "dependencies": {

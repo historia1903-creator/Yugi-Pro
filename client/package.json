@@ -20,6 +20,7 @@
     "slugify": "^1.6.8"
   },
   "devDependencies": {
+    "@img/sharp-wasm32": "0.35.3",
     "@tweakpane/core": "^2.0.5",
     "@types/ejs": "^3.1.5",
     "@types/jquery": "^3.5.34",
@@ -27,7 +28,7 @@
     "codefend": "^3.2.0",
     "ejs": "^5.0.1",
     "maxrects-packer": "^2.7.3",
-    "sharp": "^0.34.5",
+    "sharp": "^0.35.3",
     "tsx": "^4.21.0",
     "turnstile-types": "^1.2.3",
     "tweakpane": "^4.0.5",

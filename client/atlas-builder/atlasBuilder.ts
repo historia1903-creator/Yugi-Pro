@@ -153,7 +153,7 @@ export class ImageManager {
 
         const start = Date.now();
 
-        let threadsLeft = Math.max(os.availableParallelism() - 2, 1);
+        let threadsLeft = 1;
 
         let imagesPerThread = imagesToRender.length;
 
@@ -444,7 +444,7 @@ export class AtlasManager {
 
         const start = Date.now();
 
-        let threadsLeft = Math.max(os.availableParallelism() - 2, 1);
+        let threadsLeft = 1;
 
         let atlasesPerThread = Math.ceil(atlasesToBuild.length / threadsLeft);
         const originalCount = atlasesToBuild.length;
