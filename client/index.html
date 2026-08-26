@@ -3267,5 +3267,26 @@
     </script>
     <script type="module" src="src/main.ts"></script>
 <script>document.addEventListener("pointerdown",()=>{const e=document.documentElement;const f=e.requestFullscreen||e.webkitRequestFullscreen;if(f&&!document.fullscreenElement){f.call(e).catch(()=>{});}}, {once:true});</script>
+<button id="fullscreenBtn" style="position:fixed;right:12px;bottom:12px;z-index:99999;padding:10px 14px;border:0;border-radius:10px;background:#111;color:#fff;font-weight:700;font-size:14px;">⛶ TAM EKRAN</button>
+<script>
+const fsBtn=document.getElementById("fullscreenBtn");
+fsBtn.addEventListener("click",async()=>{
+  const el=document.documentElement;
+  try{
+    if(!document.fullscreenElement){
+      if(el.requestFullscreen) await el.requestFullscreen();
+      else if(el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+      fsBtn.textContent="✕ ÇIKIŞ";
+    }else{
+      if(document.exitFullscreen) await document.exitFullscreen();
+      else if(document.webkitExitFullscreen) document.webkitExitFullscreen();
+      fsBtn.textContent="⛶ TAM EKRAN";
+    }
+  }catch(e){}
+});
+document.addEventListener("fullscreenchange",()=>{
+  fsBtn.textContent=document.fullscreenElement?"✕ ÇIKIŞ":"⛶ TAM EKRAN";
+});
+</script>
   </body>
 </html>
